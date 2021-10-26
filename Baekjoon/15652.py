@@ -10,8 +10,13 @@ def sol():
         return
 
     for i in range(1, n+1):
-        result.append(i)
-        sol()
-        result.pop()
+        if len(result) == 0:
+            result.append(i)
+            sol()
+            result.pop()
+        elif i >= result[-1]:
+            result.append(i)
+            sol()
+            result.pop()
 
 sol()
