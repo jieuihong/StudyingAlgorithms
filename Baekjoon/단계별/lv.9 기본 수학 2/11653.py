@@ -5,9 +5,9 @@ def factorization(n):
     if n == 1:
         return
     else:
-        for i in range(2, n):
+        for i in range(2, n+1):
             if n % i == 0:
-                print(f"i: {i}, n: {n}\n")
+                print(i)
                 return factorization(n // i)
             else:
                 pass
