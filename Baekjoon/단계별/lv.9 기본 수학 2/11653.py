@@ -5,9 +5,13 @@ def factorization(n):
     if n == 1:
         return
     else:
+
         for i in range(2, n+1):
             if n % i == 0:
                 print(i)
+
+        for i in range(2, n+1):
+            if n % i == 0:
                 return factorization(n // i)
             else:
                 pass
