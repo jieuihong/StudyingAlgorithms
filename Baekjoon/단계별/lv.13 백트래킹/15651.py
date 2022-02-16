@@ -9,9 +9,10 @@ def sol():
         print(' '.join(map(str, result)))
         return
 
-    for i in range(1, n+1):
-        result.append(i)
-        sol()
-        result.pop()
+    else:
+        for i in range(1, n+1):
+            result.append(i)
+            sol()
+            result.pop()
 
 sol()
